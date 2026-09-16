@@ -2,22 +2,25 @@
 
 Dự án **learn-rust** (phiên bản 0.1.0, Rust edition 2024) sử dụng thư viện `dotenvy` để quản lý biến môi trường. Dưới đây là hướng dẫn chi tiết cách thiết lập môi trường Rust, Cargo trên các hệ điều hành và cách làm việc với dự án này.
 
-## 1. Cài đặt Rust và Cargo
+### 🍎 macOS (Sử dụng Homebrew)
 
-Để cài đặt Rust và Cargo, công cụ tiêu chuẩn được sử dụng là `rustup`.
+Bạn có thể chọn 1 trong 2 cách cài đặt qua Homebrew bên dưới:
 
-### 🍎 macOS
-1. Mở Terminal và chạy lệnh sau để tải xuống và chạy script cài đặt `rustup`:
+#### Cách 1: Cài đặt qua `rustup-init` (Khuyên dùng để dễ quản lý version)
    ```bash
-   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-   ```
-2. Nếu hệ thống chưa có trình biên dịch C, bạn có thể cần cài đặt Xcode command line tools bằng lệnh:
-   ```bash
-   xcode-select --install
-   ```
-3. Sau khi cài xong, khởi động lại terminal hoặc chạy lệnh sau để cập nhật biến môi trường:
-   ```bash
+   # 1. Cài đặt rustup-init qua brew
+   brew install rustup-init
+
+   # 2. Chạy rustup-init để thiết lập toolchain
+   rustup-init
+
+   # 3. Cập nhật biến môi trường
    source $HOME/.cargo/env
+   ```
+
+#### Cách 2: Cài đặt trực tiếp gói rust
+   ```bash
+   brew install rust
    ```
 
 ### 🐧 Linux (Fedora)
