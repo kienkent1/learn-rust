@@ -1,4 +1,3 @@
-
 use crate::enum_match::GENDER;
 #[derive(Debug)]
 pub struct Member {
