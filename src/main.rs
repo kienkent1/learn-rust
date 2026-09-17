@@ -1,11 +1,14 @@
 mod structs;
+mod enum_match;
 use crate::structs::Member;
+use crate::enum_match::GENDER;
 use crate::structs::Rectangle;
 fn main() {
     let user = Member {
         active: true,
         name: String::from("John"),
         age: 30,
+        gender: GENDER::male
     };
 
     let rectangle = Rectangle {

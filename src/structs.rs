@@ -1,8 +1,11 @@
+
+use crate::enum_match::GENDER;
 #[derive(Debug)]
 pub struct Member {
     pub active: bool,
     pub name: String,
     pub age: u32,
+    pub gender: GENDER,
 }
 //====================
 
