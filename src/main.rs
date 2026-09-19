@@ -1,7 +1,12 @@
+mod channels;
+mod closures;
 mod enum_match;
 mod error_handle_and_result;
+mod iterators;
 mod lifetime;
 mod structs;
+mod test;
+mod threads;
 use crate::enum_match::GENDER;
 use crate::structs::Member;
 use crate::structs::Rectangle;
