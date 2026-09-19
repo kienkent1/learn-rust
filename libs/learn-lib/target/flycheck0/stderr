@@ -1,0 +1,3 @@
+error: no matching package named `rand` found
+location searched: directory source `/mnt/e518874c-1b48-48a9-bfb0-0fc07abb36eb/work/rust/learn-rust/vendor` (which is replacing registry `crates-io`)
+required by package `learn-lib v0.1.0 (/mnt/e518874c-1b48-48a9-bfb0-0fc07abb36eb/work/rust/learn-rust/libs/learn-lib)`
