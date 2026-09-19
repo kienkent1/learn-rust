@@ -1,9 +1,11 @@
 mod enum_match;
+mod error_handle_and_result;
+mod lifetime;
 mod structs;
 use crate::enum_match::GENDER;
-
 use crate::structs::Member;
 use crate::structs::Rectangle;
+
 fn main() {
     let user = Member {
         active: true,

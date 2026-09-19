@@ -85,6 +85,12 @@ Thư mục `vendor` được sử dụng khi bạn muốn tải mã nguồn củ
    ```
    Lúc này thư mục `vendor/` đã được tạo ra.
 
+   **suggest mới:**
+   Nên thay đổi biến môi trường để cho máy đỡ nặng
+   ```bash
+   CARGO_HOME=.cargo_local cargo check
+   ```
+
 2. Để yêu cầu Cargo sử dụng các thư viện ở trong thư mục `vendor` (thay vì tải trực tiếp từ internet qua crates.io), bạn cần tạo thư mục `.cargo` và thêm file config:
    * **macOS / Linux:**
      ```bash
