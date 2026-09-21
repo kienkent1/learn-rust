@@ -1,16 +1,21 @@
+mod cell_refcell;
 mod channels;
 mod closures;
 mod enum_match;
 mod error_handle_and_result;
 mod iterators;
 mod lifetime;
+mod linked_list;
+mod mutex_arc;
+mod rc_arc;
 mod structs;
 mod test;
 mod threads;
+mod traits;
+
 use crate::enum_match::GENDER;
 use crate::structs::Member;
 use crate::structs::Rectangle;
-
 fn main() {
     let user = Member {
         active: true,

@@ -2,8 +2,11 @@
 name = "learn-rust"
 version = "0.1.0"
 edition = "2024"
-
+[[bin]]
+name = "channels"
+path = "src/channels.rs"
 [dependencies]
 crossbeam-channel = "0.5.17"
 dotenvy = "0.15.7"
+parking_lot = "0.12.5"
 unicode-segmentation = "1.13.3"
