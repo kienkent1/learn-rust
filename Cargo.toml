@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 [[bin]]
 name = "channels"
-path = "src/channels.rs"
+path = "src/mutex_arc.rs"
 [dependencies]
 crossbeam-channel = "0.5.17"
 dotenvy = "0.15.7"
